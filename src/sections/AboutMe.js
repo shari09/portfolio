@@ -27,10 +27,10 @@ const firstBox = {
 
 const secondBox = {
   heading: 'Digital Art',
-  content: `drawing digital pillows are amazing
-            but cheese graters are the best things
-            ever so hahhah h hh ah h hsdf ssd f
-            sd fsd fsd f`
+  content: `I'll change all of these later
+            sadfjasl so hahhah h hh ah
+            sdfsadf fdf df h hsdf ssd f
+            sd fsd fsd asdf sdf ds fds ff`
 };
 
 const Wrapper = styled.div`
