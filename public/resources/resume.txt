@@ -1,0 +1,25 @@
+hi im shari sun
+
+skills:
+- im literally the best front end designer in the school
+- i did node for like 2 days
+- firebase is fun
+- jojo really hate backend
+
+
+experiences:
+- i made a website
+- uhhh i used firebase lmao
+- mhacks
+
+education:
+- like 2006 - now 
+  - richmond hill high school trying to get that gamer ossd
+- like 1996 to 2006
+  - smth smth didnt exist yet
+
+
+
+
+
+mongodb is web scale
