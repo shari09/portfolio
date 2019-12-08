@@ -29,7 +29,7 @@ const secondBox = {
   heading: 'Digital Art',
   content: `I'll change all of these later
             sadfjasl so hahhah h hh ah
-            sdfsadf fdf df h hsdf ssd f
+            sdfsadf fdf hello sdf ssd f
             sd fsd fsd asdf sdf ds fds ff`
 };
 
