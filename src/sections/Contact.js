@@ -46,7 +46,7 @@ const Line = styled.hr`
 const Table = styled.table`
   margin: auto;
   color: white;
-  font-size: 3px;
+  font-size: 20px;
   font-family: sans-serif;
 `;
 
