@@ -1,0 +1,25 @@
+{
+  "short_name": "Personal website",
+  "name": "Shari's non-existent front-end",
+  "icons": [
+    {
+      "src": "ice_cream.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "ice_cream.jpeg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "ice_cream.jpeg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
