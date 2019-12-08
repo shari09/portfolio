@@ -15,7 +15,8 @@ const signatures = [
   'make that two sentences',
   'save it, save it',
   'se no! demo sonnan ja dame mou sonnan ja hora kokoro wa shinka suru yo motto motto!',
-  'making duber greet and meet selling meat while heating heat-meat sheets yeet'
+  'making duber greet and meet selling meat while heating heat-meat sheets yeet',
+  'work in progress for a whileeeee'
 ];
 
 //hardcoded part do not worry too much about it

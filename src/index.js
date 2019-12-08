@@ -9,6 +9,7 @@ import {
 import Main from './pages/Main.js';
 import Contact from './sections/Contact.js'
 import Navbar from './sections/Navbar.js';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 
 
@@ -31,4 +32,5 @@ class App extends Component {
 
 const root = document.getElementById('root');
 
-ReactDOM.render(<App/>, root);
+ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>
+                <App/></Router>, root);
