@@ -46,18 +46,19 @@ const firstBox = {
   content: [
     'Camp counsellor',
     'Junior robotics instructor'
-  ]
+  ],
+  href: 'http://www.thesteamproject.ca'
 };
 
 const secondBox = {
   icon: 'fa fa-code',
   heading: 'Hatch Canada',
   content: [
-    'LIT program coordinator',
-    'Project creator',
-    'Curriculum developer'
+    'Leader In Training (LIT) program coordinator',
+    'Project creator/editor',
+    'Alpha curriculum (Gr9+) developer'
   ],
-  href: './hatchWork.html'
+  href: 'http://www.hatchcoding.com'
 };
 
 const thirdBox = {
@@ -82,6 +83,7 @@ class Experience extends Component {
           <WorkBox icon={firstBox.icon} 
                    heading={firstBox.heading} 
                    content={firstBox.content}
+                   href={firstBox.href}
           />
           <WorkBox icon={secondBox.icon} 
                    heading={secondBox.heading} 

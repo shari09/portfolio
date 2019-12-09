@@ -4,19 +4,17 @@ import {screenSizes, colours} from '../constants.js';
 
 
 const signatures = [
-  'this looks cool',
-  ':DDDDD',
-  'hello world',
-  'css is tooooooo hard',
-  'doesn\'t this look cool',
-  'I know this looks really cool',
-  'Amirite',
-  'node.js is badass rockstar tech and mongodb is web scale',
-  'make that two sentences',
-  'save it, save it',
-  'se no! demo sonnan ja dame mou sonnan ja hora kokoro wa shinka suru yo motto motto!',
-  'making duber greet and meet selling meat while heating heat-meat sheets yeet',
-  'work in progress for a whileeeee'
+  'Hello world',
+  ':DDDD',
+  'I like Javascript',
+  'Contest programming/algorithm is hard',
+  'This website took me so long to make from scratch (no template)',
+  'I wish I knew the existence of Next.js before finishing the entire site',
+  'Frontend is hmmmmm',
+  'I like backend better :D',
+  'I like food, lots of different food',
+  'This typing component is cool',
+  'I never thought I\'d one day use classes in JS (not prototypes)'
 ];
 
 //hardcoded part do not worry too much about it

@@ -84,7 +84,7 @@ class WorkBox extends Component {
       <Wrapper>
         <Icon><i className={this.props.icon}/></Icon>
         <Description>
-          <Heading href={this.props.href}>{this.props.heading}</Heading>
+          <Heading href={this.props.href} target='_blank'>{this.props.heading}</Heading>
           <Line/>
           <Content>
             {this.parseContent()}

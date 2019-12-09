@@ -5,15 +5,15 @@ import constants, {screenSizes, colours} from '../constants.js';
 
 
 const description = `
-  I am a blah blah blah blah I just need some space filler 
-  right now and I will change all of these later and I really
-  don't know what to type so hehehhehehehehhehehehehhehe.
-  Something about me is that I like food and I like a lot of 
-  things. However, I don't like css and making this website was
-  a lot of pain so I hope I never have to touch frontend again
-  unless necessary. CSS is too haaaard. Oh ya, I've used
-  React, Styled-components and is gonna use react-router just to make a 
-  static webpage ._.
+  || Hello, there's not much to say about me. I'm currently a grade 11
+  student at RHHS and I like many things. I like drawing, painting,
+  cooking, baking, etc. This September, after going to my first Hackathon,
+  I realized how much I lack in terms of skills. I did not know the existence
+  of servers, dynamic pages, algorithms, etc. I barely knew anything.
+  For the entire time, all I could make was only a .html file with 
+  some info and pictures. However, I learned how much I didn't know. After that
+  first week of September, I was motivated to improve and catch up to everyone.
+  I know I'm late by several years, but I'll do whatever I can to catch up :D
 `;
 
 
