@@ -43,6 +43,7 @@ const Line = styled.hr`
 const firstBox = {
   icon: 'fa fa-code',
   heading: 'The STEAM project',
+  date: 'July 2019 - present',
   content: [
     'Camp counsellor',
     'Junior robotics instructor'
@@ -53,6 +54,7 @@ const firstBox = {
 const secondBox = {
   icon: 'fa fa-code',
   heading: 'Hatch Canada',
+  date: 'Nov 2019 - present',
   content: [
     'Leader In Training (LIT) program coordinator',
     'Project creator/editor',
@@ -64,6 +66,7 @@ const secondBox = {
 const thirdBox = {
   icon: 'fa fa-code',
   heading: 'Dairy Queen',
+  date: 'July 2019 - Aug 2019',
   content: [
     'Basic crew member'
   ]
@@ -82,16 +85,19 @@ class Experience extends Component {
         <Wrapper>
           <WorkBox icon={firstBox.icon} 
                    heading={firstBox.heading} 
+                   date={firstBox.date}
                    content={firstBox.content}
                    href={firstBox.href}
           />
           <WorkBox icon={secondBox.icon} 
                    heading={secondBox.heading} 
+                   date={secondBox.date}
                    content={secondBox.content}
                    href={secondBox.href}
           />
           <WorkBox icon={thirdBox.icon} 
-                   heading={thirdBox.heading} 
+                   heading={thirdBox.heading}
+                   date={thirdBox.date} 
                    content={thirdBox.content}
           />
         </Wrapper>

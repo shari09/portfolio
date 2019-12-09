@@ -20,13 +20,9 @@ const signatures = [
 //hardcoded part do not worry too much about it
 const StyledDiv = styled.div`
   text-align: center;
-  grid-column: 1;
-  grid-row: 5;
   margin: 0px 10px;
 
   @media all and (min-width: ${screenSizes.MOBILE}) {
-    grid-column: 2 /span 3;
-    grid-row: 4;
     margin: 0;
     text-align: left;
   }

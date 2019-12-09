@@ -69,6 +69,13 @@ const Content = styled.ul`
   list-style-type: none;
 `;
 
+const Date = styled.div`
+  font-size: 70%;
+  font-family: sans-serif;
+  margin-left: 10px;
+  color: ${colours.DARK_PURPLE};
+`;
+
 class WorkBox extends Component {
   constructor(props) {
     super(props);
@@ -85,6 +92,7 @@ class WorkBox extends Component {
         <Icon><i className={this.props.icon}/></Icon>
         <Description>
           <Heading href={this.props.href} target='_blank'>{this.props.heading}</Heading>
+          <Date>{this.props.date}</Date>
           <Line/>
           <Content>
             {this.parseContent()}
