@@ -55,9 +55,7 @@ const secondBox = {
   content: [
     'LIT program coordinator',
     'Project creator',
-    'etc etc',
-    'asdfsad',
-    'adsf'
+    'Curriculum developer'
   ],
   href: './hatchWork.html'
 };
@@ -66,7 +64,7 @@ const thirdBox = {
   icon: 'fa fa-code',
   heading: 'Dairy Queen',
   content: [
-    'basic crew member'
+    'Basic crew member'
   ]
 };
 

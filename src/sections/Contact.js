@@ -41,28 +41,6 @@ const Line = styled.hr`
   margin-bottom: 10px;
 `;
 
-
-//for google code in
-const Table = styled.table`
-  margin: auto;
-  color: white;
-  font-size: 10px;
-  font-family: sans-serif;
-`;
-
-const UselessTable = () => {
-  return (
-    <Table>
-      <tr>
-        <th>Table for google code in (Heading)</th>
-      </tr>
-      <tr>
-        <td>Don't mind this being really small it's here because the requirements asked</td>
-      </tr>
-    </Table>
-  );
-}
-
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -85,7 +63,6 @@ class Contact extends Component {
           </a>
 
         </Wrapper>
-        <UselessTable/>
       </Container>
     );
   }

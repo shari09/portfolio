@@ -119,7 +119,7 @@ const Description = (props) => {
   return (
     <StyledDescription>
       {description}
-      <LinkWrapper><Link href='/resources/resume.txt' target='_blank'>Resume</Link></LinkWrapper>
+      <LinkWrapper><Link href='./resources/resume.txt' target='_blank'>Resume</Link></LinkWrapper>
     </StyledDescription>
   );
 }
