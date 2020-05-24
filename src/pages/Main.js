@@ -12,10 +12,10 @@ class Main extends Component {
 
   render() {
     return (
-      <div id='homePage'>
-        <Home id='home'/>
-        <AboutMe id='aboutMe'/>
-        <Experience id='experience'/>
+      <div id="homePage">
+        <Home id="home" />
+        <AboutMe id="aboutMe" />
+        <Experience id="experience" />
       </div>
     );
   }

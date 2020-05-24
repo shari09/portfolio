@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {screenSizes, colours} from '../constants.js';
 
-
 const signatures = [
   'Hello world',
   ':DDDD',
@@ -14,7 +13,11 @@ const signatures = [
   'I like backend better :D',
   'I like food, lots of different food',
   'This typing component is cool',
-  'I never thought I\'d one day use classes in JS (not prototypes)'
+  "I never thought I'd one day use classes in JS (not prototypes)",
+  'Why is this website so bad',
+  'UX is tooo harrrdddddd',
+  'Why are the colours so bad',
+  'Sighhhhhhhhh'
 ];
 
 //hardcoded part do not worry too much about it
@@ -26,7 +29,7 @@ const StyledDiv = styled.div`
     margin: 0;
     text-align: left;
   }
-`; 
+`;
 
 const StyledSpan = styled.span`
   background-color: transparent;
@@ -37,40 +40,39 @@ const StyledSpan = styled.span`
   font-family: Verdana, sans-serif;
   margin-left: auto;
   margin-right: auto;
-  
 `;
-
 
 class Typing extends Component {
   constructor(props) {
     super(props);
     this.state = {
       typedWord: '',
-      addingLetters: true
+      addingLetters: true,
     };
     this.adding = {
-      id: '', 
-      speed: 100
+      id: '',
+      speed: 100,
     }; //setinterval id and speed
     this.deleting = {
-      id: '', 
-      speed: () => {return Math.floor(Math.random()*20)+20}
+      id: '',
+      speed: () => {
+        return Math.floor(Math.random() * 20) + 20;
+      },
     };
     this.signatures = signatures;
     this.used = [];
-    this.curIndex = [Math.floor(Math.random()*this.signatures.length), 0];
-    
+    this.curIndex = [Math.floor(Math.random() * this.signatures.length), 0];
   }
 
   newIndex() {
     this.used.push(this.curIndex[0]);
     if (this.used.length === this.signatures.length) {
       this.used = [];
-      return (Math.floor(Math.random()*this.signatures.length));
+      return Math.floor(Math.random() * this.signatures.length);
     } else {
-      let idx = Math.floor(Math.random()*this.signatures.length);
+      let idx = Math.floor(Math.random() * this.signatures.length);
       while (this.used.indexOf(idx) !== -1) {
-        idx = Math.floor(Math.random()*this.signatures.length);
+        idx = Math.floor(Math.random() * this.signatures.length);
       }
       return idx;
     }
@@ -78,16 +80,15 @@ class Typing extends Component {
 
   addingLetters() {
     //if the entire word is used
-    if (this.curIndex[1]-1 === this.signatures[this.curIndex[0]].length) {
-      this.setState(state => ({
-        addingLetters: false
+    if (this.curIndex[1] - 1 === this.signatures[this.curIndex[0]].length) {
+      this.setState((state) => ({
+        addingLetters: false,
       }));
 
       clearInterval(this.typingID);
       this.typingID = setInterval(() => {
         this.updateLetters();
       }, this.deleting.speed());
-      
     } else {
       this.curIndex[1]++;
     }
@@ -95,8 +96,8 @@ class Typing extends Component {
 
   deletingLetters() {
     if (this.curIndex[1] === 1) {
-      this.setState(state => ({
-        addingLetters: true
+      this.setState((state) => ({
+        addingLetters: true,
       }));
 
       this.curIndex[0] = this.newIndex();
@@ -105,7 +106,6 @@ class Typing extends Component {
       this.typingID = setInterval(() => {
         this.updateLetters();
       }, this.adding.speed);
-
     } else {
       this.curIndex[1]--;
     }
@@ -118,8 +118,8 @@ class Typing extends Component {
       this.deletingLetters();
     }
 
-    this.setState(state => ({
-      typedWord: this.signatures[this.curIndex[0]].slice(0, this.curIndex[1])
+    this.setState((state) => ({
+      typedWord: this.signatures[this.curIndex[0]].slice(0, this.curIndex[1]),
     }));
   }
 
@@ -136,9 +136,7 @@ class Typing extends Component {
   render() {
     return (
       <StyledDiv>
-        <StyledSpan>
-          {this.state.typedWord}|
-        </StyledSpan>
+        <StyledSpan>{this.state.typedWord}|</StyledSpan>
       </StyledDiv>
     );
   }

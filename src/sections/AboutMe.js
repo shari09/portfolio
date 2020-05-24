@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import SquareDisplay from '../components/SquareDisplay.js';
 import constants, {screenSizes, colours} from '../constants.js';
 
-
 const description = `
   || Hello, there's not much to say about me. I'm currently a grade 11
   student at RHHS and I like many things. I like drawing, painting,
@@ -16,27 +15,20 @@ const description = `
   I know I'm late by several years, but I'll do whatever I can to catch up :D
 `;
 
-
 const firstBox = {
-  heading: 'NodeJs',
-  content: `I have two weeks of experience
-            flaksdjflasdfjlksfj asdfj las s
-            adf sdf d d df d fd sds f fd f sd
-             adsf as fsd fds fsd fds sd fsdf s`
+  heading: 'Web app',
+  content: `Although inexperienced, I have some experience with web app developing. In the future, I'm planning on creating a mobile app using React-Native so please look forward to it!`,
 };
 
 const secondBox = {
-  heading: 'Digital Art',
-  content: `I'll change all of these later
-            sadfjasl so hahhah h hh ah
-            sdfsadf fdf hello sdf ssd f
-            sd fsd fsd asdf sdf ds fds ff`
+  heading: 'Misc',
+  content: `During my free time, I enjoy spending time with my friends. We watch movies, go out to places to eat, shop, play sports, etc. I also do drawing and likes to play ping pong with my brother (occasinally). If you ever want a chat, feel free to contact me!`,
 };
 
 const Wrapper = styled.div`
   display: flex;
   flex-flow: column wrap;
-  background-color: ${colours.LIGHTER_PURPLE};
+  background-color: white;
 
   padding-top: ${constants.NAVBAR_HEIGHT};
   padding-bottom: 30px;
@@ -45,7 +37,6 @@ const Wrapper = styled.div`
     flex-flow: row wrap;
   }
 `;
-
 
 const LinkWrapper = styled.p`
   text-align: center;
@@ -79,7 +70,6 @@ const StyledDescription = styled.div`
   }
 `;
 
-
 const StyledHeading = styled.h1`
   width: 100%;
   text-align: center;
@@ -110,20 +100,23 @@ const Heading = (props) => {
   return (
     <StyledHeading>
       {props.children}
-      <Line/>
-    </StyledHeading>  
+      <Line />
+    </StyledHeading>
   );
-}
+};
 
 const Description = (props) => {
   return (
     <StyledDescription>
       {description}
-      <LinkWrapper><Link href='./resources/resume.txt' target='_blank'>Resume</Link></LinkWrapper>
+      <LinkWrapper>
+        <Link href="./resources/exit_resume.pdf" target="_blank">
+          Resume
+        </Link>
+      </LinkWrapper>
     </StyledDescription>
   );
-}
-
+};
 
 class AboutMe extends Component {
   constructor(props) {
@@ -134,9 +127,12 @@ class AboutMe extends Component {
     return (
       <Wrapper id={this.props.id}>
         <Heading>About Me</Heading>
-        <Description/>
-        <SquareDisplay heading={firstBox.heading} content={firstBox.content}/>
-        <SquareDisplay heading={secondBox.heading} content={secondBox.content}/>
+        <Description />
+        <SquareDisplay heading={firstBox.heading} content={firstBox.content} />
+        <SquareDisplay
+          heading={secondBox.heading}
+          content={secondBox.content}
+        />
       </Wrapper>
     );
   }

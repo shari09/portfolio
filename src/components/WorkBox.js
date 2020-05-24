@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {screenSizes, colours} from '../constants';
 
-
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
@@ -10,10 +9,9 @@ const Wrapper = styled.div`
   width: 100%;
   font-family: Raleway, sans-serif;
   text-align: left;
-  
 
   color: ${colours.EVEN_DARKER_PURPLE};
-  
+
   @media all and (min-width: ${screenSizes.MOBILE}) {
     width: 30%;
   }
@@ -29,7 +27,6 @@ const Icon = styled.div`
   border: 2px solid ${colours.DARK_PURPLE};
   border-radius: 10px 0 0 0;
   border-width: 2px 0 2px 2px;
-
 `;
 
 const Description = styled.div`
@@ -45,8 +42,6 @@ const Heading = styled.a`
   font-size: 10vw;
   text-decoration: none;
   color: ${colours.EVEN_DARKER_PURPLE};
-
-  
 
   @media all and (min-width: ${screenSizes.MOBILE}) {
     font-size: 200%;
@@ -83,25 +78,26 @@ class WorkBox extends Component {
   }
 
   parseContent = () => {
-    return(this.content.map(item => <li>{'> ' + item}</li>));
+    return this.content.map((item) => <li>{'> ' + item}</li>);
   };
 
   render() {
     return (
       <Wrapper>
-        <Icon><i className={this.props.icon}/></Icon>
+        <Icon>
+          <i className={this.props.icon} />
+        </Icon>
         <Description>
-          <Heading href={this.props.href} target='_blank'>{this.props.heading}</Heading>
+          <Heading href={this.props.href} target="_blank">
+            {this.props.heading}
+          </Heading>
           <Date>{this.props.date}</Date>
-          <Line/>
-          <Content>
-            {this.parseContent()}
-          </Content>
+          <Line />
+          <Content>{this.parseContent()}</Content>
         </Description>
       </Wrapper>
     );
-  };
+  }
 }
-
 
 export default WorkBox;

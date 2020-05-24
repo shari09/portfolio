@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {screenSizes, colours} from '../constants.js';
 
-
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
@@ -22,7 +21,6 @@ const Wrapper = styled.div`
     height: 20%;
     margin-right: 5%;
     margin-top: 0;
-
   }
 `;
 
@@ -46,21 +44,16 @@ const StyledContent = styled.div`
 const Heading = (props) => {
   return (
     <StyledHeading>
-      <Line/>
+      <Line />
       {props.children}
-      <Line/>
+      <Line />
     </StyledHeading>
   );
 };
 
 const Content = (props) => {
-  return (
-    <StyledContent>
-      {props.children}
-    </StyledContent>
-  );
-}
-
+  return <StyledContent>{props.children}</StyledContent>;
+};
 
 class SquareDisplay extends Component {
   constructor(props) {

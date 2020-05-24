@@ -21,6 +21,5 @@ const constants = {
   NAVBAR_HEIGHT: '80px',
 };
 
-
 export const {screenSizes, colours} = constants;
 export default constants;

@@ -1,17 +1,9 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Main from './pages/Main.js';
-import Contact from './sections/Contact.js'
+import Contact from './sections/Contact.js';
 import Navbar from './sections/Navbar.js';
-
-
-
 
 class App extends Component {
   constructor(props) {
@@ -21,9 +13,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
-        <Main/>
-        <Contact id='contact'/>
+        <Navbar />
+        <Main />
+        <Contact id="contact" />
       </div>
     );
   }
@@ -31,5 +23,9 @@ class App extends Component {
 
 const root = document.getElementById('root');
 
-ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>
-                <App/></Router>, root);
+ReactDOM.render(
+  <Router basename={process.env.PUBLIC_URL}>
+    <App />
+  </Router>,
+  root,
+);

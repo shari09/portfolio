@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import constants, {screenSizes, colours} from '../constants.js';
 
-
 const Container = styled.div`
   padding: 50px 10px 30px 10px;
   background-color: ${colours.DARK_GRAY};
@@ -14,7 +13,6 @@ const Wrapper = styled.div`
   margin: auto;
   color: white;
 `;
-
 
 const Heading = styled.p`
   font-family: Nunito, sans-serif;
@@ -51,22 +49,20 @@ class Contact extends Component {
       <Container id={this.props.id}>
         <Wrapper>
           <Heading>Contact Me</Heading>
-          <Line/>
-          <a href='https://www.instagram.com/shari09x/' target='_blank'>
-            <Icon className='fa fa-instagram'/>
+          <Line />
+          <a href="https://www.instagram.com/shari09x/" target="_blank">
+            <Icon className="fa fa-instagram" />
           </a>
-          <a href='https://github.com/shari09' target='_blank'>
-            <Icon className='fa fa-github'/>
+          <a href="https://github.com/shari09" target="_blank">
+            <Icon className="fa fa-github" />
           </a>
-          <a href='mailto: shari.s093w@gmail.com subject=subject text'>
-            <Icon className='fa fa-envelope'/>
+          <a href="mailto: shari09cxxcr@gmail.com subject=subject text">
+            <Icon className="fa fa-envelope" />
           </a>
-
         </Wrapper>
       </Container>
     );
   }
 }
-
 
 export default Contact;

@@ -10,19 +10,21 @@ const Wrapper = styled.div`
   grid-gap: 20px;
   width: 100%;
   height: 100vh;
-  background-image: radial-gradient(${colours.LOW_OPC_GRAY}, ${colours.LOW_OPC_BLACK}), url('https://wallpaperaccess.com//full/51426.jpg');
+  background-image: radial-gradient(
+      ${colours.LOW_OPC_GRAY},
+      ${colours.LOW_OPC_BLACK}
+    ),
+    url('./resources/background.png');
   background-size: cover;
 
-  
   @media all and (min-width: ${screenSizes.MOBILE}) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-
 `;
 
 const ProfilePic = styled.img`
-  border-radius: 40%;
+  border-radius: 35%;
   grid-column: 1;
   grid-row: 2 / span 2;
   max-width: 100%;
@@ -45,44 +47,44 @@ const Desc = styled.div`
     grid-column: 2;
     grid-row: 2 / span 2;
   }
-
 `;
 
 const Name = styled.div`
-  
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   align-self: end;
   text-align: center;
 
   @media all and (min-width: ${screenSizes.MOBILE}) {
-    grid-column: 2 ;
+    grid-column: 2;
     grid-row: 3;
     text-align: left;
   }
-
 `;
-
 
 class Home extends Component {
   constructor(props) {
     super(props);
   }
 
-
   render() {
     return (
-      <Wrapper id={this.props.id} onScroll={() => {console.log('hi')}}>
+      <Wrapper
+        id={this.props.id}
+        onScroll={() => {
+          console.log('hi');
+        }}>
         <Desc>
           <Name>
             <p style={{'font-size': '20px'}}>HELLO, MY NAME IS </p>
             <p style={{'font-size': '80px'}}>Shari Sun</p>
           </Name>
-          <Typing/>
+          <Typing />
         </Desc>
         <ProfilePic
-             src='https://d3kqdc25i4tl0t.cloudfront.net/articles/content/92_408268_151204profilepicture_hero.jpg' 
-             alt='uh oh something went wrong D:'/>
+          src="./resources/me.png"
+          alt="uh oh something went wrong D:"
+        />
       </Wrapper>
     );
   }
